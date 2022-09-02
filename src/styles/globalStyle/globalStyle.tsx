@@ -1,5 +1,5 @@
 import { createGlobalStyle } from "styled-components";
-
+import { FontsFamilies } from "./type";
 
 const GlobalStyle = createGlobalStyle`
 
@@ -15,7 +15,6 @@ const GlobalStyle = createGlobalStyle`
 * {
   margin: 0;
   padding: 0;
-  cursor: none;
 }
 /*
   3. Allow percentage-based heights in the application
@@ -80,10 +79,9 @@ html {
 
 `;
 
-// export const fontsFamilies = {
-//   [FontsFamilies.oldStandardRegular]: "'Old Standard TT'",
-//   [FontsFamilies.bebasNeueRegular]: "'Bebas Neue'",
-// };
+export const fontsFamilies = {
+  [FontsFamilies.DMSerifDisplay]: "'DM Serif Display', serif",
+  [FontsFamilies.PublicSans]: "'Public Sans', sans-serif",
+};
 
 export default GlobalStyle;
-
