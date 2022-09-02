@@ -1,6 +1,7 @@
 import React, { ReactNode } from "react";
 import Head from "next/head";
 import GlobalStyle from "../styles/globalStyle/globalStyle";
+import HeaderMenu from "./HeaderMenu/HeaderMenu";
 
 type Props = {
   children?: ReactNode;
@@ -14,7 +15,11 @@ const Layout = ({ children, title = "This is the default title" }: Props) => (
       <meta charSet="utf-8" />
       <meta name="viewport" content="initial-scale=1.0, width=device-width" />
       <link rel="preconnect" href="https://fonts.googleapis.com" />
-      <link rel="preconnect" href="https://fonts.gstatic.com" crossOrigin />
+      <link
+        rel="preconnect"
+        href="https://fonts.gstatic.com"
+        crossOrigin="anonymous"
+      />
       <link
         href="https://fonts.googleapis.com/css2?family=DM+Serif+Display&family=Public+Sans:wght@700&display=swap"
         rel="stylesheet"
@@ -25,6 +30,7 @@ const Layout = ({ children, title = "This is the default title" }: Props) => (
       ></link>
     </Head>
     <GlobalStyle />
+    <HeaderMenu />
 
     {children}
   </div>
