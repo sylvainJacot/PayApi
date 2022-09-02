@@ -1,4 +1,5 @@
 import styled from "styled-components";
+import BurgerMenu from "../BurgerMenu/BurgerMenu";
 import LogoClient from "../Logo/LogoClient";
 
 export default function HeaderMenu() {
@@ -6,9 +7,10 @@ export default function HeaderMenu() {
     <>
       <HeaderWrapper>
         <LogoClient WidthClientLogo={135} />
+        <BurgerMenu />
       </HeaderWrapper>
     </>
   );
 }
 
-export const HeaderWrapper = styled.nav``;
+export const HeaderWrapper = styled.header``;

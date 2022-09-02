@@ -72,7 +72,7 @@ button {
   box-shadow: none;
 }  
 html {
-  font-size: 24px;
+  font-size: 8px;
   scroll-behavior: smooth;
 }
 
